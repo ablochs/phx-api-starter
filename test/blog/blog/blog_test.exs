@@ -1,10 +1,10 @@
-defmodule Blog.BlogTest do
+defmodule Blog.PostsTest do
   use Blog.DataCase
 
-  alias Blog.Blog
+  alias Blog.Posts
 
   describe "posts" do
-    alias Blog.Blog.Post
+    alias Blog.Posts.Post
 
     @valid_attrs %{name: "some name"}
     @update_attrs %{name: "some updated name"}
@@ -64,7 +64,7 @@ defmodule Blog.BlogTest do
   end
 
   describe "comments" do
-    alias Blog.Blog.Comment
+    alias Blog.Posts.Comment
 
     @valid_attrs %{body: "some body"}
     @update_attrs %{body: "some updated body"}

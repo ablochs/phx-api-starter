@@ -1,7 +1,7 @@
-defmodule Blog.Blog.Comment do
+defmodule Blog.Posts.Comment do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Blog.Blog.Comment
+  alias Blog.Posts.Comment
 
 
   schema "comments" do

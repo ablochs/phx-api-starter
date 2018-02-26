@@ -1,8 +1,8 @@
 defmodule BlogWeb.CommentController do
   use BlogWeb, :controller
 
-  alias Blog.Blog
-  alias Blog.Blog.Comment
+  alias Blog.Posts
+  alias Blog.Posts.Comment
 
   action_fallback BlogWeb.FallbackController
 

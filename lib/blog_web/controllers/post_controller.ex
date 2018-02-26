@@ -1,8 +1,8 @@
 defmodule BlogWeb.PostController do
   use BlogWeb, :controller
 
-  alias Blog.Blog
-  alias Blog.Blog.Post
+  alias Blog.Posts
+  alias Blog.Posts.Post
 
   action_fallback BlogWeb.FallbackController
 

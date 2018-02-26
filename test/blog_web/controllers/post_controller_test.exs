@@ -1,8 +1,8 @@
 defmodule BlogWeb.PostControllerTest do
   use BlogWeb.ConnCase
 
-  alias Blog.Blog
-  alias Blog.Blog.Post
+  alias Blog.Posts
+  alias Blog.Posts.Post
 
   @create_attrs %{name: "some name"}
   @update_attrs %{name: "some updated name"}

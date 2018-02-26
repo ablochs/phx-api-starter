@@ -1,7 +1,7 @@
-defmodule Blog.Blog.Post do
+defmodule Blog.Posts.Post do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Blog.Blog.Post
+  alias Blog.Posts.Post
 
 
   schema "posts" do

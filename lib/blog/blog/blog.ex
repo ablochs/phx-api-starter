@@ -1,4 +1,4 @@
-defmodule Blog.Blog do
+defmodule Blog.Posts do
   @moduledoc """
   The Blog context.
   """
@@ -6,7 +6,7 @@ defmodule Blog.Blog do
   import Ecto.Query, warn: false
   alias Blog.Repo
 
-  alias Blog.Blog.Post
+  alias Blog.Posts.Post
 
   @doc """
   Returns the list of posts.
@@ -102,7 +102,7 @@ defmodule Blog.Blog do
     Post.changeset(post, %{})
   end
 
-  alias Blog.Blog.Comment
+  alias Blog.Posts.Comment
 
   @doc """
   Returns the list of comments.

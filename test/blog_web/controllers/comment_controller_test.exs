@@ -1,8 +1,8 @@
 defmodule BlogWeb.CommentControllerTest do
   use BlogWeb.ConnCase
 
-  alias Blog.Blog
-  alias Blog.Blog.Comment
+  alias Blog.Posts
+  alias Blog.Posts.Comment
 
   @create_attrs %{body: "some body"}
   @update_attrs %{body: "some updated body"}
