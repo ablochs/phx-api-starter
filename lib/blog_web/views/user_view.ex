@@ -17,6 +17,7 @@ defmodule BlogWeb.UserView do
       last_name: user.last_name,
       password_hash: user.password_hash,
       is_admin: user.is_admin,
-      email_verified: user.email_verified}
+      email_verified: user.email_verified,
+      jwt: user.jwt}
   end
 end
