@@ -10,11 +10,12 @@ defmodule BlogWeb.Router do
   scope "/api", BlogWeb do
     pipe_through :api
 
-    resources "/auth", AuthController, only: [:create, :delete]
-    resources "/users", UserController, except: [:new, :edit]
+    post "/login", AuthController, :create
+    post "/logout", AuthController, :delete
     resources "/posts", PostController, except: [:new, :edit] do
       resources "/comments", CommentController, except: [:new, :edit]
     end
+    resources "/users", UserController, except: [:new, :edit]
 
   end
 end

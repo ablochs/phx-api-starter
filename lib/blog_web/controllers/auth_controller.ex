@@ -1,7 +1,7 @@
 defmodule BlogWeb.AuthController do
   use BlogWeb, :controller
 
-  alias Todo.Accounts
+  alias Blog.Accounts
   alias BlogWeb.AuthView
 
   action_fallback BlogWeb.FallbackController

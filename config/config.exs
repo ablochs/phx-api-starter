@@ -26,12 +26,12 @@ config :logger, :console,
 config :guardian, Guardian,
   allowed_algos: ["HS512"], # optional
   verify_module: Guardian.JWT,  # optional
-  issuer: "Todo",
+  issuer: "Blog",
   ttl: { 30, :days },
   allowed_drift: 2000,
   verify_issuer: true, # optional
   secret_key: "j5W70LFYiL2e8YKL9zKnxJkqYlInvtwy/Cf+crTlKtdTRZUSPMKXtQw/AF9ULONv",
-  serializer: Todo.GuardianSerializer
+  serializer: Blog.GuardianSerializer
 
 
 # Import environment specific config. This must remain at the bottom
