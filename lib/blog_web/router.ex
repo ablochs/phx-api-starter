@@ -9,7 +9,9 @@ defmodule BlogWeb.Router do
     pipe_through :api
 
     resources "/users", UserController, except: [:new, :edit]
-    resources "/posts", PostController, except: [:new, :edit]
+    resources "/posts", PostController, except: [:new, :edit] do
+      resources "/comments", CommentController, except: [:new, :edit]
+    end
 
   end
 end

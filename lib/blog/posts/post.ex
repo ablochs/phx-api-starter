@@ -6,7 +6,7 @@ defmodule Blog.Posts.Post do
 
   schema "posts" do
     field :title, :string
-    field :body, :text
+    field :body, :string
     field :user_id, :id
 
     timestamps()
