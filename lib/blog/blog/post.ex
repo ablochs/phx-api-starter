@@ -5,7 +5,8 @@ defmodule Blog.Blog.Post do
 
 
   schema "posts" do
-    field :name, :string
+    field :title, :string
+    field :body, :text
     field :user_id, :id
 
     timestamps()
@@ -14,7 +15,7 @@ defmodule Blog.Blog.Post do
   @doc false
   def changeset(%Post{} = post, attrs) do
     post
-    |> cast(attrs, [:name])
-    |> validate_required([:name])
+    |> cast(attrs, [:title, :body])
+    |> validate_required([:title, :body])
   end
 end
