@@ -18,6 +18,11 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 * Mailing list: http://groups.google.com/group/phoenix-talk
 * Source: https://github.com/phoenixframework/phoenix
 
+## Usefull links
+
+* [Elixir + Phoenix Framework + Guardian + JWT + Comeonin](https://gist.github.com/nikneroz/ba698a120bc037801f45328855cbdca8)
+* [Ecto Getting Started](https://github.com/elixir-ecto/ecto/blob/master/guides/Getting%20Started.md)
+
 ## How the project is built
 
 ### Create the project
