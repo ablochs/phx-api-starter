@@ -33,12 +33,15 @@ defmodule Blog.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.3.0"},
-      {:phoenix_pubsub, "~> 1.0"},
-      {:phoenix_ecto, "~> 3.2"},
-      {:postgrex, ">= 0.0.0"},
+      {:bcrypt_elixir, "~> 1.0"},
+      {:comeonin, "~> 4.0"},
+      {:cowboy, "~> 1.0"},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:guardian, "~> 0.14"},
+      {:phoenix, "~> 1.3.0"},
+      {:phoenix_ecto, "~> 3.2"},
+      {:phoenix_pubsub, "~> 1.0"},
+      {:postgrex, ">= 0.0.0"},
     ]
   end
 
